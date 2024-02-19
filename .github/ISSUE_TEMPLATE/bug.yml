@@ -1,0 +1,78 @@
+name:  🐞 Bug Report
+description: Create a report to help us improve
+labels: ["bug", "new issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        👋🎉 Thanks for taking the time to fill out this bug report.
+
+        Before you post:
+        - Please search for existing issues to avoid creating duplicate requests.
+        - If you only have a question, you may get a faster response by asking in [our Discord server](https://).
+
+        Additional information helps us troubleshoot the issue faster.
+
+  - type: textarea
+    attributes:
+      label: What happened?
+      placeholder: A concise description of what you're experiencing.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: How can we reproduce the issue?
+      placeholder: |
+        1. Alice starts a call with video using ...
+        2. Bob answers a call without video.
+        3. Bob sees a black screen instead of Alice's video.
+        4. In the console on Bob's side, there is an error ...
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: What do you expected to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Environment setup
+      description: |
+        Please describe the environment details for every key participant in the call. Feel free to add more details if necessary.
+        
+        Alice:
+          - OS: Ubuntu 20.04
+          - Platform: Electron 28.2.3
+          - Browser: Chrome 121.0.6167.160
+        
+        Bob:
+          - OS: IOS 15.0
+          - Platform: Cordova 3.0
+          - Browser: Safari 17.3.1
+      value: |
+        - OS:
+        - Platform:
+        - Browser:
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Is this a regression?
+      description: If yes, explain the environment you used previously.
+      placeholder: PeerJS client 1.5.0, Chrome 119.0
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: |
+        Logs? Screenshots? Videos? WebRTC internals dump? Anything that will give us more context about the issue you are encountering!
+      placeholder: |
+        You can attach images or log files by clicking this area to highlight it and then dragging files in.
+    validations:
+      required: false
