@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💡 Feature Request
-    url: https://github.com/orgs/peers/discussions
+    url: https://github.com/orgs/peers/discussions/categories/ideas-feature-requests
     about: Share your new ideas for features and enhancements in our discussions.
 
   - name: ❓ Question Request
