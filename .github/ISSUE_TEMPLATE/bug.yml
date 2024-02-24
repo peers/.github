@@ -1,17 +1,22 @@
 name:  🐞 Bug Report
-description: Create a report to help us improve
-labels: ["bug", "new issue"]
+description: Create a report to help us improve.
+labels: ["bug", "unconfirmed"]
 body:
   - type: markdown
     attributes:
       value: |
         👋🎉 Thanks for taking the time to fill out this bug report.
 
-        Before you post:
-        - Please search for existing issues to avoid creating duplicate requests.
-        - If you only have a question, you may get a faster response by asking in [our Discord server](https://).
+        **If you only have a question**, you may get a faster response by asking in [our Discord server](https://).
 
         Additional information helps us troubleshoot the issue faster.
+        
+  - type: checkboxes
+    attributes:
+      label: Please, check for existing issues to avoid duplicates.
+      options:
+        - label: No similar issues found.
+          required: true
 
   - type: textarea
     attributes:
